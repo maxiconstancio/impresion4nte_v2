@@ -7,6 +7,10 @@ const ingresosRoutes = require("./routes/ingresos");
 const proveedoresRoutes = require("./routes/proveedores");
 const cuotasRoutes = require("./routes/cuotas");
 const dashboardRoutes = require("./routes/dashboard");
+const productosRoutes = require("./routes/productos");
+const parametroRoutes = require("./routes/parametros");
+const ventasRoutes = require("./routes/ventas");
+
 const cors = require("cors");
 
 app.use(cors());
@@ -22,7 +26,9 @@ app.use("/api/ingresos", ingresosRoutes);
 app.use("/api/proveedores", proveedoresRoutes);
 app.use("/api/cuotas", cuotasRoutes);
 app.use("/api/dashboard", dashboardRoutes);
-
+app.use("/api/productos", productosRoutes);
+app.use("/api/parametros", parametroRoutes);
+app.use("/api/ventas", ventasRoutes);
 // Sincronizar base de datos y levantar servidor
 const PORT = process.env.PORT || 3000;
 
