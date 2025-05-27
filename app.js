@@ -10,6 +10,7 @@ const dashboardRoutes = require("./routes/dashboard");
 const productosRoutes = require("./routes/productos");
 const parametroRoutes = require("./routes/parametros");
 const ventasRoutes = require("./routes/ventas");
+const importarProductosRoutes = require("./routes/importarProductos");
 
 const cors = require("cors");
 
@@ -29,6 +30,7 @@ app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/productos", productosRoutes);
 app.use("/api/parametros", parametroRoutes);
 app.use("/api/ventas", ventasRoutes);
+app.use("/api/productos/importar", importarProductosRoutes);
 // Sincronizar base de datos y levantar servidor
 const PORT = process.env.PORT || 3000;
 
