@@ -31,6 +31,7 @@ app.use("/api/productos", productosRoutes);
 app.use("/api/parametros", parametroRoutes);
 app.use("/api/ventas", ventasRoutes);
 app.use("/api/productos/importar", importarProductosRoutes);
+app.use("/api/pedidos", require("./routes/pedidos"));
 // Sincronizar base de datos y levantar servidor
 const PORT = process.env.PORT || 3000;
 
