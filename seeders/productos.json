@@ -1,0 +1,1192 @@
+[
+  {
+    "id": 41,
+    "nombre": "Sprunki Enderman",
+    "descripcion": "Minecraft",
+    "peso": 69.0,
+    "precio_unitario": 4000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 40,
+    "nombre": "Sprunki Bruja",
+    "descripcion": "Minecraft",
+    "peso": 69.0,
+    "precio_unitario": 4000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 52,
+    "nombre": "Sprunki Black",
+    "descripcion": "Negro ",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 3,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 55,
+    "nombre": "Teorema de Pitágora",
+    "descripcion": "Teorema",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 64,
+    "nombre": "Deadpool Urbano",
+    "descripcion": "Deadpool",
+    "peso": 0.0,
+    "precio_unitario": 10000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 63,
+    "nombre": "Batman Urbano",
+    "descripcion": "Batman",
+    "peso": 0.0,
+    "precio_unitario": 10000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 39,
+    "nombre": "Golem",
+    "descripcion": "Minecraft",
+    "peso": 695.0,
+    "precio_unitario": 7000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 116,
+    "nombre": "Stitch",
+    "descripcion": "Flexy",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 80,
+    "nombre": "Muñeca juego del calamar",
+    "descripcion": "Muñeca",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 92,
+    "nombre": "Maceta en espiral",
+    "descripcion": "Verde",
+    "peso": 0.0,
+    "precio_unitario": 5000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 103,
+    "nombre": "llavero capibara fernet",
+    "descripcion": "ferne",
+    "peso": 0.0,
+    "precio_unitario": 2500.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 42,
+    "nombre": "Zombie Pato",
+    "descripcion": "Minecraft",
+    "peso": 69.0,
+    "precio_unitario": 4000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 85,
+    "nombre": "Muñeca",
+    "descripcion": "Poppy playtime",
+    "peso": 0.0,
+    "precio_unitario": 7000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 81,
+    "nombre": "triceratops ",
+    "descripcion": "dinopro",
+    "peso": 0.0,
+    "precio_unitario": 5000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 78,
+    "nombre": "tails",
+    "descripcion": "tails",
+    "peso": 0.0,
+    "precio_unitario": 15000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 86,
+    "nombre": "Marshmello",
+    "descripcion": "Marshmello",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 67,
+    "nombre": "corazón ",
+    "descripcion": "corazón con patas",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 70,
+    "nombre": "fidget joystick ",
+    "descripcion": "fidget joystick ",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 69,
+    "nombre": "elefante apoya cel",
+    "descripcion": "apoya celular de elefante",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 72,
+    "nombre": "iguana brillante",
+    "descripcion": "brilla en la oscuridad ",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 97,
+    "nombre": "Mini elefante ",
+    "descripcion": "Celeste",
+    "peso": 0.0,
+    "precio_unitario": 2500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 98,
+    "nombre": "Mini elefante ",
+    "descripcion": "celeste",
+    "peso": 0.0,
+    "precio_unitario": 2500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 71,
+    "nombre": "huevo de dragón ",
+    "descripcion": "hay marrón y amarillo",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 84,
+    "nombre": "Osito flexi",
+    "descripcion": "oso",
+    "peso": 0.0,
+    "precio_unitario": 4500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 75,
+    "nombre": "dragón largo",
+    "descripcion": "dragón largo",
+    "peso": 0.0,
+    "precio_unitario": 7000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 94,
+    "nombre": "Skibidi parlante",
+    "descripcion": "Tiene corbata roja",
+    "peso": 0.0,
+    "precio_unitario": 7000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 91,
+    "nombre": "Skibidi Titan camerawoman",
+    "descripcion": "Negro y aqua",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 88,
+    "nombre": "Dino cuello largo",
+    "descripcion": "Verde",
+    "peso": 0.0,
+    "precio_unitario": 5000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 101,
+    "nombre": "llavero Bob esponja ",
+    "descripcion": "Bob esponja llavero ",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 3,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 99,
+    "nombre": "Kuromi",
+    "descripcion": "Kuromi",
+    "peso": 0.0,
+    "precio_unitario": 5000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 93,
+    "nombre": "Chill de cojones",
+    "descripcion": "Está de chill",
+    "peso": 0.0,
+    "precio_unitario": 5000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 87,
+    "nombre": "DonKey",
+    "descripcion": "King kong",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 100,
+    "nombre": "Llavero juego del calamar ",
+    "descripcion": "Llaveros general",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 16,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 106,
+    "nombre": "stich llavero",
+    "descripcion": "stichllavero",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 5,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 95,
+    "nombre": "Mini unicornio",
+    "descripcion": "unicornio",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 104,
+    "nombre": "sonny angels capibara",
+    "descripcion": "s.a capibara",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 74,
+    "nombre": "dragón chino",
+    "descripcion": "✓",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 128,
+    "nombre": "Elsa",
+    "descripcion": "Frozen",
+    "peso": 0.0,
+    "precio_unitario": 9000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 82,
+    "nombre": "Bluey",
+    "descripcion": "Azul",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 83,
+    "nombre": "Bingo",
+    "descripcion": "Color cafe",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 43,
+    "nombre": "Creeper",
+    "descripcion": "Minecraft",
+    "peso": 69.0,
+    "precio_unitario": 6000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 107,
+    "nombre": "triceratops hueso ",
+    "descripcion": "t hueso dinosaurio ",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 109,
+    "nombre": "llavero de grupo sanguineo",
+    "descripcion": "tp sangre llavero",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 123,
+    "nombre": "Knuckles",
+    "descripcion": "Articulado",
+    "peso": 0.0,
+    "precio_unitario": 15000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 50,
+    "nombre": "Sprunki Sky",
+    "descripcion": "Celeste",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 96,
+    "nombre": "Pulpo",
+    "descripcion": "Flexi",
+    "peso": 0.0,
+    "precio_unitario": 5000.0,
+    "stock": 4,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 105,
+    "nombre": "capibara corazón llavero",
+    "descripcion": "capicorazon",
+    "peso": 1.0,
+    "precio_unitario": 1500.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 46,
+    "nombre": "Bulbasaur",
+    "descripcion": "pokemon",
+    "peso": 12.0,
+    "precio_unitario": 3500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 49,
+    "nombre": "Sprunki Garnold",
+    "descripcion": "Amarillo con Lente",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 3,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 47,
+    "nombre": "Sprunki Purple",
+    "descripcion": "Violeta",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 3,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 110,
+    "nombre": "Patricio llavero",
+    "descripcion": "p.e llavero",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 5,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 37,
+    "nombre": "Oveja Minecraft",
+    "descripcion": "Rosa",
+    "peso": 69.0,
+    "precio_unitario": 5000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 65,
+    "nombre": "Stormtrooper facha",
+    "descripcion": "Facha",
+    "peso": 0.0,
+    "precio_unitario": 10000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 61,
+    "nombre": "Dummy",
+    "descripcion": "Dummy",
+    "peso": 0.0,
+    "precio_unitario": 10000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 102,
+    "nombre": "capibara llavero flexible",
+    "descripcion": "color crema",
+    "peso": 0.0,
+    "precio_unitario": 3000.0,
+    "stock": 5,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 66,
+    "nombre": "Vaso Labubu",
+    "descripcion": "Grandes",
+    "peso": 0.0,
+    "precio_unitario": 15000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 44,
+    "nombre": "Chimuelo",
+    "descripcion": "Negro",
+    "peso": 6.0,
+    "precio_unitario": 6000.0,
+    "stock": 3,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 62,
+    "nombre": "Ballerina Capuccina",
+    "descripcion": "Bailarina",
+    "peso": 0.0,
+    "precio_unitario": 8000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 54,
+    "nombre": "Sprunki Clukr",
+    "descripcion": "Sobrero marron",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 3,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 53,
+    "nombre": "Sprunki Tunner",
+    "descripcion": "Sobrero marron",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 38,
+    "nombre": "Steve",
+    "descripcion": "Minecraft",
+    "peso": 69.0,
+    "precio_unitario": 7000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 58,
+    "nombre": "Pikachu ",
+    "descripcion": "Pequeño",
+    "peso": 7.0,
+    "precio_unitario": 3500.0,
+    "stock": 4,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 59,
+    "nombre": "Fidget Hexagono",
+    "descripcion": "Elipse.. no es pero bueno",
+    "peso": 0.0,
+    "precio_unitario": 2500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 89,
+    "nombre": "Labubu",
+    "descripcion": "Azul rosa y marrón ",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 4,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 90,
+    "nombre": "Fokobot",
+    "descripcion": "Robotico",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 45,
+    "nombre": "Spiderman Pequeño",
+    "descripcion": "Spider",
+    "peso": 12.0,
+    "precio_unitario": 2500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 60,
+    "nombre": "Capuchino Asesino",
+    "descripcion": "Capu capu",
+    "peso": 0.0,
+    "precio_unitario": 8000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 136,
+    "nombre": "Melody",
+    "descripcion": "Melody",
+    "peso": 0.0,
+    "precio_unitario": 5000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 48,
+    "nombre": "Sprunki Simon",
+    "descripcion": "Amarillo con los dos ojos",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 137,
+    "nombre": "Power Ranger Amarillo ",
+    "descripcion": "Amarillo ",
+    "peso": 0.0,
+    "precio_unitario": 12000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 150,
+    "nombre": "Exhibidor de collar",
+    "descripcion": "Negro",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 130,
+    "nombre": "Cuadro Gato",
+    "descripcion": "Gato",
+    "peso": 0.0,
+    "precio_unitario": 7500.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 129,
+    "nombre": "Totoro",
+    "descripcion": "Pequeño",
+    "peso": 0.0,
+    "precio_unitario": 8000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 73,
+    "nombre": "Dragon raro",
+    "descripcion": "dinosaurio con cuerno de rinoceronte ",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 138,
+    "nombre": "Power Ranger negro",
+    "descripcion": "Negro",
+    "peso": 0.0,
+    "precio_unitario": 12000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 139,
+    "nombre": "Power Ranger azul",
+    "descripcion": "Azul",
+    "peso": 0.0,
+    "precio_unitario": 12000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 121,
+    "nombre": "Charmander",
+    "descripcion": "Pokemon",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 126,
+    "nombre": "Power Rangers Rojo Pedido",
+    "descripcion": "Pedido ",
+    "peso": 0.0,
+    "precio_unitario": 10000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 122,
+    "nombre": "Sonic",
+    "descripcion": "Articulado ",
+    "peso": 0.0,
+    "precio_unitario": 15000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 140,
+    "nombre": "Power Ranger rosa",
+    "descripcion": "Rosa",
+    "peso": 0.0,
+    "precio_unitario": 12000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 133,
+    "nombre": "Goku",
+    "descripcion": "Goku flexi",
+    "peso": 0.0,
+    "precio_unitario": 10000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 134,
+    "nombre": "Power Ranger Rojo",
+    "descripcion": "Ranger ",
+    "peso": 0.0,
+    "precio_unitario": 12000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 108,
+    "nombre": "llavero barbi ",
+    "descripcion": "llaverobarbi",
+    "peso": 0.0,
+    "precio_unitario": 1000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 111,
+    "nombre": "Dino rex huesos",
+    "descripcion": "Huesos",
+    "peso": 0.0,
+    "precio_unitario": 5000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 144,
+    "nombre": "Taza Sonic",
+    "descripcion": "Taza de Sonic",
+    "peso": 0.0,
+    "precio_unitario": 12000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 76,
+    "nombre": "dragón normal",
+    "descripcion": "cómo el dragón largo pero más cortito",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 3,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 146,
+    "nombre": "Kitty",
+    "descripcion": "Kitty flexi",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 149,
+    "nombre": "Mate personalizado",
+    "descripcion": "Mate personalizado ",
+    "peso": 0.0,
+    "precio_unitario": 8000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 145,
+    "nombre": "Pelotocino",
+    "descripcion": "Roblox",
+    "peso": 0.0,
+    "precio_unitario": 7000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 152,
+    "nombre": "Ladrillos ",
+    "descripcion": "Ladrillos miniatura",
+    "peso": 0.0,
+    "precio_unitario": 450.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 135,
+    "nombre": "Shadow",
+    "descripcion": "Shadow flexi",
+    "peso": 0.0,
+    "precio_unitario": 15000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 51,
+    "nombre": "Sprunki Black Terror",
+    "descripcion": "Negro de terror",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 154,
+    "nombre": "Chimpancini ",
+    "descripcion": "Mono loco",
+    "peso": 0.0,
+    "precio_unitario": 7000.0,
+    "stock": 4,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 141,
+    "nombre": "Power Ranger verde ",
+    "descripcion": "Verde",
+    "peso": 0.0,
+    "precio_unitario": 12000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 155,
+    "nombre": "Spiderman Urban ",
+    "descripcion": "Urban",
+    "peso": 0.0,
+    "precio_unitario": 10000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 127,
+    "nombre": "Llavero pantera rosa ",
+    "descripcion": "Pedido para sábado 24/5",
+    "peso": 0.0,
+    "precio_unitario": 1500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 125,
+    "nombre": "Crocodilo ",
+    "descripcion": "Bombardilo",
+    "peso": 0.0,
+    "precio_unitario": 7000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 56,
+    "nombre": "Cubo Infinito",
+    "descripcion": "Cubo colores",
+    "peso": 0.0,
+    "precio_unitario": 2500.0,
+    "stock": 4,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 153,
+    "nombre": "Mateo",
+    "descripcion": "Mateeeo",
+    "peso": 0.0,
+    "precio_unitario": 8000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 3,
+    "nombre": "Cartuchera Grey",
+    "descripcion": "Grey",
+    "peso": 0.0,
+    "precio_unitario": 14000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 131,
+    "nombre": "Sprunki Wenda",
+    "descripcion": "Blanco",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 5,
+    "nombre": "Sprunki Mrs Fun",
+    "descripcion": "Mrs Fun",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 7,
+    "nombre": "stitch llavero flexi",
+    "descripcion": "stitch llavero flexi",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 1,
+    "nombre": "Deslizadores Mate",
+    "descripcion": "100 deslizadores",
+    "peso": 0.0,
+    "precio_unitario": 30000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 2,
+    "nombre": "llavero pulpo",
+    "descripcion": "llavero multicolor",
+    "peso": 21.0,
+    "precio_unitario": 2500.0,
+    "stock": 4,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 142,
+    "nombre": "Sprunki Grey",
+    "descripcion": "Grey",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 4,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 124,
+    "nombre": "Tuntun",
+    "descripcion": "Sahur",
+    "peso": 0.0,
+    "precio_unitario": 8000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 151,
+    "nombre": "Dart Vader Urban",
+    "descripcion": "Urban ",
+    "peso": 0.0,
+    "precio_unitario": 10000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 6,
+    "nombre": "bombini gusini",
+    "descripcion": "bombombini",
+    "peso": 1.0,
+    "precio_unitario": 7000.0,
+    "stock": 3,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 114,
+    "nombre": "tralalero",
+    "descripcion": "Tralalero Tralala",
+    "peso": 0.0,
+    "precio_unitario": 7000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 4,
+    "nombre": "Manguera Fidget",
+    "descripcion": "Twist",
+    "peso": 30.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 113,
+    "nombre": "Patapim",
+    "descripcion": "Br br patapim",
+    "peso": 0.0,
+    "precio_unitario": 8000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 115,
+    "nombre": "Sprunki Pink",
+    "descripcion": "Rosa",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 147,
+    "nombre": "Repo largo",
+    "descripcion": "Repo",
+    "peso": 0.0,
+    "precio_unitario": 6000.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 148,
+    "nombre": "Repo corto",
+    "descripcion": "Repo corto",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 120,
+    "nombre": "Squartle",
+    "descripcion": "Pokemon",
+    "peso": 0.0,
+    "precio_unitario": 4500.0,
+    "stock": 0,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 118,
+    "nombre": "Sprunki Oren",
+    "descripcion": "Naranja",
+    "peso": 0.0,
+    "precio_unitario": 4000.0,
+    "stock": 1,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 132,
+    "nombre": "Enderman Flexi",
+    "descripcion": "Enderman flexi",
+    "peso": 0.0,
+    "precio_unitario": 8000.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  },
+  {
+    "id": 57,
+    "nombre": "Furia Luminosa llavero ",
+    "descripcion": "Furia Luminosa ",
+    "peso": 0.0,
+    "precio_unitario": 3500.0,
+    "stock": 2,
+    "stock_minimo": 5,
+    "activo": true
+  }
+]

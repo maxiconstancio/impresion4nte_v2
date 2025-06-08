@@ -1,0 +1,722 @@
+[
+  {
+    "id": 19,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 20,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 21,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 22,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 23,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 24,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 25,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 26,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 27,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 30,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 31,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 32,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 33,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 34,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 35,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 36,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 37,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 38,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 39,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 40,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 41,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 42,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 43,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 44,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 45,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 46,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 47,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 48,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 49,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 50,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 51,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 52,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 53,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 54,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 55,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 56,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 57,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 58,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 59,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 60,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 61,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 62,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 63,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 64,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 65,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 66,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 67,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 68,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 69,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 70,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 71,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-18T00:00:00"
+  },
+  {
+    "id": 87,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 82,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 83,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 84,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 85,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 86,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 88,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 90,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 91,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 92,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 94,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 93,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 95,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 96,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 97,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 98,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 99,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-24T00:00:00"
+  },
+  {
+    "id": 109,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 110,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 111,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 112,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 113,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 114,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 115,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 116,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 117,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 119,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 120,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 121,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 122,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 123,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 124,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 125,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 126,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 127,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-31T00:00:00"
+  },
+  {
+    "id": 2,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 3,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 178,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-03T00:00:00"
+  },
+  {
+    "id": 181,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-05-17T00:00:00"
+  },
+  {
+    "id": 202,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-06T00:00:00"
+  },
+  {
+    "id": 209,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 210,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 211,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 212,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 213,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 214,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 215,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 216,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 217,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 218,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 219,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 220,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 221,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 222,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 223,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 224,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 225,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 226,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 227,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 228,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 229,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 230,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 231,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 232,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 233,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 234,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 235,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 236,
+    "tipo": "feria",
+    "metodo_pago": "mercadopago",
+    "fecha": "2025-06-07T00:00:00"
+  },
+  {
+    "id": 238,
+    "tipo": "feria",
+    "metodo_pago": "efectivo",
+    "fecha": "2025-06-07T00:00:00"
+  }
+]

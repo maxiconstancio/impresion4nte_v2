@@ -33,6 +33,8 @@ module.exports = {
       const { cliente, estado = "presupuesto", comentarios = "", productos } = req.body;
 
       const pedido = await Pedido.create({ cliente, estado, comentarios });
+      console.log(pedido)
+
 
       for (const item of productos) {
         const producto = await Producto.create({
@@ -61,6 +63,7 @@ module.exports = {
   async eliminar(req, res) {
     try {
       const { id } = req.params;
+      
       const pedido = await Pedido.findByPk(id);
       if (!pedido) return res.status(404).json({ error: "Pedido no encontrado" });
   

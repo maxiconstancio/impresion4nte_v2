@@ -103,22 +103,29 @@ module.exports = {
   },
 
   async create(req, res) {
-    const { fecha, metodo_pago, tipo, productos } = req.body;
-
+    const { fecha, metodo_pago, tipo, productos, cliente, comentarios } = req.body;
+  
     if (!productos || !productos.length) {
       return res.status(400).json({ error: "La venta debe tener al menos un producto." });
     }
-
+  
     try {
       let total = 0;
-
+  
       // calcular total
       productos.forEach(p => {
         total += parseFloat(p.precio_unitario) * parseInt(p.cantidad);
       });
-
-      const venta = await Venta.create({ fecha, metodo_pago, tipo, total });
-
+  
+      const venta = await Venta.create({
+        fecha,
+        metodo_pago,
+        tipo,
+        total,
+        cliente,
+        comentarios,
+      });
+  
       // registrar productos y ajustar stock
       for (const item of productos) {
         await VentaProducto.create({
@@ -127,17 +134,18 @@ module.exports = {
           cantidad: item.cantidad,
           precio_unitario: item.precio_unitario
         });
-
+  
         const producto = await Producto.findByPk(item.producto_id);
         if (producto) {
           producto.stock = producto.stock - item.cantidad;
           await producto.save();
         }
       }
-
+  
       res.status(201).json({ mensaje: "Venta registrada", venta_id: venta.id });
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
   }
+  
 };

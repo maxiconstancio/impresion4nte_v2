@@ -15,7 +15,15 @@ module.exports = (sequelize, DataTypes) => {
       total: {
         type: DataTypes.DECIMAL(10, 2),
         allowNull: false,
-      }
+      },
+      cliente: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      comentarios: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+      },
     });
   
     Venta.associate = function(models) {

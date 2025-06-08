@@ -1,4 +1,4 @@
-const { noTrueLogging } = require('sequelize/lib/utils/deprecations');
+
 
 require('dotenv').config();
 
