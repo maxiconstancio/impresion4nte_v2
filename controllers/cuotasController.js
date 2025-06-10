@@ -65,5 +65,19 @@ module.exports = {
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
+  },
+  async pagarCuota(req, res) {
+    try {
+      const cuota = await Cuota.findByPk(req.params.id);
+      if (!cuota) return res.status(404).json({ error: "Cuota no encontrada" });
+  
+      cuota.pagado = true;
+      cuota.fecha_pago = req.body.fecha_pago || new Date().toISOString().split("T")[0];
+      await cuota.save();
+  
+      res.json({ mensaje: "Cuota marcada como pagada", cuota });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
   }
 };

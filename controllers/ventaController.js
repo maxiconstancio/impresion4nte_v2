@@ -146,6 +146,91 @@ module.exports = {
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
+  } ,
+  async rankingProductos(req, res) {
+    const { tipo, desde, hasta } = req.query;
+    const { Op } = require("sequelize");
+
+    try {
+      const whereVenta = {};
+      if (tipo && tipo !== "todos") {
+        whereVenta.tipo = tipo;
+      }
+      if (desde || hasta) {
+        whereVenta.fecha = {};
+        if (desde) whereVenta.fecha[Op.gte] = desde;
+        if (hasta) whereVenta.fecha[Op.lte] = hasta;
+      }
+
+      const resultados = await VentaProducto.findAll({
+        include: [
+          {
+            model: Venta,
+            as: "venta",
+            where: whereVenta,
+            attributes: []
+          },
+          {
+            model: Producto,
+            as: "producto",
+            attributes: ["id", "nombre"]
+          }
+        ],
+        attributes: [
+          "producto_id",
+          [require("sequelize").fn("SUM", require("sequelize").col("cantidad")), "cantidad_total"]
+        ],
+        group: ["producto_id", "producto.id", "producto.nombre"],
+        order: [[require("sequelize").literal("cantidad_total"), "DESC"]]
+      });
+
+      const ranking = resultados.map(r => ({
+        producto_id: r.producto_id,
+        nombre: r.producto.nombre,
+        cantidad_total: parseInt(r.get("cantidad_total"))
+      }));
+
+      res.json(ranking);
+    } catch (error) {
+      console.error("Error al obtener ranking", error);
+      res.status(500).json({ error: error.message });
+    }
+  },
+  async ventasPorHora(req, res) {
+    const { tipo, desde, hasta } = req.query;
+    const { Op } = require("sequelize");
+    const where = {};
+  
+    if (tipo && tipo !== "todos") where.tipo = tipo;
+    if (desde || hasta) {
+      where.fecha = {};
+      if (desde) where.fecha[Op.gte] = desde;
+      if (hasta) where.fecha[Op.lte] = hasta;
+    }
+  
+    try {
+      const ventas = await Venta.findAll({
+        where,
+        attributes: ["fecha", "total"]
+      });
+  
+      const horas = Array(24).fill(0);
+  
+      ventas.forEach((venta) => {
+        const hora = new Date(venta.fecha).getHours();
+        horas[hora] += parseFloat(venta.total);
+      });
+  
+      const resultado = horas.map((total, hora) => ({
+        hora: `${hora}:00`,
+        total
+      }));
+  
+      res.json(resultado);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
   }
+  
   
 };
