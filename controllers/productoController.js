@@ -110,7 +110,32 @@ module.exports = {
       res.status(500).json({ error: error.message });
     }
   },
-
+  async getStockValorizado(req, res) {
+    try {
+      const productos = await Producto.findAll({
+        attributes: ["id", "nombre", "stock", "precio_unitario"],
+        where: {
+          activo: true,
+          stock: { [Op.gt]: 0 }
+        },
+        order: [["nombre", "ASC"]]
+      });
+  
+      const valorizado = productos.map(p => ({
+        id: p.id,
+        nombre: p.nombre,
+        stock: p.stock,
+        precio_unitario: parseFloat(p.precio_unitario),
+        valor_total: parseFloat(p.precio_unitario) * p.stock
+      }));
+  
+      const total = valorizado.reduce((acc, p) => acc + p.valor_total, 0);
+  
+      res.json({ productos: valorizado, total });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  },
   async sugerirReposicionFeria(req, res) {
     try {
       const desde = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000);
