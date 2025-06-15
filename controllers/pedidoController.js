@@ -33,7 +33,7 @@ module.exports = {
       const { cliente, estado = "presupuesto", comentarios = "", productos } = req.body;
 
       const pedido = await Pedido.create({ cliente, estado, comentarios });
-      console.log(pedido)
+      console.log('llega')
 
 
       for (const item of productos) {
@@ -78,7 +78,6 @@ module.exports = {
   },
   async actualizarPresupuesto(req, res) {
     try {
-        console.log("Body recibido:", req.body);
       const { id } = req.params;
       const { cliente, comentarios, productos } = req.body;
 
