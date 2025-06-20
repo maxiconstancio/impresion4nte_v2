@@ -33,21 +33,28 @@ module.exports = {
       const { cliente, estado = "presupuesto", comentarios = "", productos } = req.body;
 
       const pedido = await Pedido.create({ cliente, estado, comentarios });
-      console.log('llega')
-
 
       for (const item of productos) {
-        const producto = await Producto.create({
-          nombre: item.nombre,
-          descripcion: item.observaciones,
-          precio_unitario: item.precio_unitario,
-          stock: 0,
-          activo: false,
-        });
+        let productoId;
+
+        if (item.id) {
+          // Usa producto existente
+          productoId = item.id;
+        } else {
+          // Crea producto nuevo (temporal)
+          const producto = await Producto.create({
+            nombre: item.nombre,
+            descripcion: item.observaciones,
+            precio_unitario: item.precio_unitario,
+            stock: 0,
+            activo: false,
+          });
+          productoId = producto.id;
+        }
 
         await PedidoProducto.create({
           pedidoId: pedido.id,
-          productoId: producto.id,
+          productoId,
           cantidad: item.cantidad,
           observaciones: item.observaciones,
           precio_unitario: item.precio_unitario,
@@ -60,22 +67,24 @@ module.exports = {
       res.status(500).json({ error: "Error al crear presupuesto" });
     }
   },
+
   async eliminar(req, res) {
     try {
       const { id } = req.params;
-      
+
       const pedido = await Pedido.findByPk(id);
       if (!pedido) return res.status(404).json({ error: "Pedido no encontrado" });
-  
+
       await PedidoProducto.destroy({ where: { pedidoId: id } });
       await pedido.destroy();
-  
+
       res.sendStatus(204);
     } catch (err) {
       console.error("Error al eliminar pedido:", err);
       res.status(500).json({ error: "Error al eliminar pedido" });
     }
   },
+
   async actualizarPresupuesto(req, res) {
     try {
       const { id } = req.params;
@@ -95,17 +104,24 @@ module.exports = {
       await PedidoProducto.destroy({ where: { pedidoId: id } });
 
       for (const item of productos) {
-        const producto = await Producto.create({
-          nombre: item.nombre,
-          descripcion: item.observaciones,
-          precio_unitario: item.precio_unitario,
-          stock: 0,
-          activo: false,
-        });
+        let productoId;
+
+        if (item.id) {
+          productoId = item.id;
+        } else {
+          const producto = await Producto.create({
+            nombre: item.nombre,
+            descripcion: item.observaciones,
+            precio_unitario: item.precio_unitario,
+            stock: 0,
+            activo: false,
+          });
+          productoId = producto.id;
+        }
 
         await PedidoProducto.create({
           pedidoId: pedido.id,
-          productoId: producto.id,
+          productoId,
           cantidad: item.cantidad,
           observaciones: item.observaciones,
           precio_unitario: item.precio_unitario,
@@ -119,12 +135,11 @@ module.exports = {
     }
   },
 
-
   async actualizarEstado(req, res) {
     try {
       const { id } = req.params;
-      const { estado } = req.body;
-
+      let { estado } = req.body;
+  
       const pedido = await Pedido.findByPk(id, {
         include: {
           model: Producto,
@@ -133,20 +148,26 @@ module.exports = {
           },
         },
       });
-
+  
       if (!pedido) return res.status(404).json({ error: "Pedido no encontrado" });
-
+  
       const estadoAnterior = pedido.estado;
-
+  
+      // Si el nuevo estado es pagado, forzamos que también sea entregado
+      if (estado === "pagado") {
+        estado = "entregado";
+      }
+  
       await pedido.update({ estado });
-
-      if (estado === "entregado" && estadoAnterior !== "entregado") {
+  
+      // Si se pasa a entregado o pagado (que implica entregado)
+      if ((estado === "entregado" || estado === "pagado") && estadoAnterior !== "entregado") {
         const total = pedido.Productos.reduce((sum, p) => {
           const precio = parseFloat(p.PedidoProducto?.precio_unitario ?? p.precio_unitario) || 0;
           const cantidad = parseInt(p.PedidoProducto?.cantidad) || 0;
           return sum + (precio * cantidad);
         }, 0);
-
+  
         const venta = await Venta.create({
           tipo: "pedido",
           fecha: new Date(),
@@ -154,7 +175,7 @@ module.exports = {
           metodoPago: "efectivo",
           estado: "completada",
         });
-
+  
         for (const p of pedido.Productos) {
           const precio = parseFloat(p.PedidoProducto?.precio_unitario ?? p.precio_unitario) || 0;
           await VentaProducto.create({
@@ -163,15 +184,16 @@ module.exports = {
             cantidad: p.PedidoProducto.cantidad,
             precio_unitario: precio,
           });
-
+  
           await p.decrement("stock", { by: p.PedidoProducto.cantidad });
         }
       }
-
+  
       res.sendStatus(200);
     } catch (err) {
       console.error("Error al actualizar estado del pedido:", err);
       res.status(500).json({ error: "Error interno del servidor" });
     }
-  }
+  },
+  
 };

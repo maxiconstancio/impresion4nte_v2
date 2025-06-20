@@ -2,8 +2,8 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    const ventas = require('../seeders/ventas.json');
-    const items = require('../seeders/items_venta.json');
+    const ventas = require('./ventas.json');
+    const items = require('./items_venta.json');
 
     // Agrupar items por venta_id
     const agrupados = {};
@@ -33,7 +33,7 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    const ventas = require('../seeders/ventas.json');
+    const ventas = require('./ventas.json');
     const ids = ventas.map(v => v.id);
     await queryInterface.bulkDelete('Venta', { id: ids }, {});
   }

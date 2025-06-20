@@ -105,6 +105,8 @@ module.exports = {
   // ventaController.js
 async create(req, res) {
   const { fecha, metodo_pago, tipo, productos, cliente, comentarios, ajustar_stock = true } = req.body;
+  console.log(ajustar_stock)
+  console.log(metodo_pago)
 
   if (!productos || !productos.length) {
     return res.status(400).json({ error: "La venta debe tener al menos un producto." });
@@ -135,8 +137,11 @@ async create(req, res) {
       });
 
       if (ajustar_stock) {
+        
         const producto = await Producto.findByPk(item.producto_id);
+        
         if (producto) {
+          console.log(producto)
           producto.stock -= item.cantidad;
           await producto.save();
         }
