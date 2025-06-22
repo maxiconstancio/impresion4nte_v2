@@ -1,5 +1,8 @@
 const { Producto, VentaProducto, Venta } = require("../models");
 const { Op, Sequelize } = require("sequelize");
+const visionService = require("../services/visionService");
+const vectorService = require("../services/vectorService");
+const localClipService = require("../services/localClipService");
 
 module.exports = {
   async getAll(req, res) {
@@ -12,6 +15,30 @@ module.exports = {
         where[Op.and] = [
           { activo: true },
           { stock: { [Op.gt]: 0 } },
+          { nombre: { [Op.iLike]: `%${search}%` } },
+        ];
+      }
+
+      const productos = await Producto.findAll({
+        where,
+        limit: search ? 10 : undefined,
+        order: [["nombre", "ASC"]],
+      });
+
+      res.json(productos);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  },
+  async getAllPedido(req, res) {
+    try {
+      const { search } = req.query;
+
+      const where = {};
+
+      if (search && search.length >= 3) {
+        where[Op.and] = [
+          { activo: true },
           { nombre: { [Op.iLike]: `%${search}%` } },
         ];
       }
@@ -189,6 +216,112 @@ module.exports = {
       console.error("Error en sugerirReposicionFeria:", error);
       res.status(500).json({ error: error.message });
     }
+  },
+  searchByPhoto: async (req, res) => {
+    try {
+      const { imageUrl } = req.body;
+  
+      // 1️⃣ Describir la imagen usando GPT-4o Vision
+      const description = await visionService.describeImage(imageUrl);
+  
+      // 2️⃣ Generar embedding de la descripción
+      const embedding = await visionService.generateEmbedding(description);
+  
+      // 3️⃣ Buscar similitud en Pinecone
+      const match = await vectorService.searchVector(embedding);
+  
+      // 4️⃣ Buscar producto en la DB local usando el ID que devuelve Pinecone
+      const producto = await Producto.findOne({
+        where: { id: match.id },
+      });
+  
+      res.json({ 
+        description, 
+        match: producto, 
+        score: match.score 
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: error.message });
+    }
+  }, searchByPhotoLocal: async (req, res) => {
+    try {
+      const { imageUrl } = req.body;
+
+      const queryEmbedding = await localClipService.generateImageEmbedding(imageUrl);
+
+      const productos = await Producto.findAll({
+        where: {
+          embedding: { [Op.ne]: null }
+        }
+      });
+
+      const resultados = [];
+
+      for (const producto of productos) {
+        const productEmbedding = producto.embedding;
+        const score = cosineSimilarity(queryEmbedding, productEmbedding);
+
+        resultados.push({
+          producto,
+          score
+        });
+      }
+
+      resultados.sort((a, b) => b.score - a.score);
+
+      res.json({
+        matches: resultados.slice(0, 3)
+      });
+
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: error.message });
+    }
+  
+    try {
+      const { imageUrl } = req.body;
+  
+      // 1️⃣ Generar embedding de la imagen usando CLIP local
+      const queryEmbedding = await localClipService.generateImageEmbedding(imageUrl);
+  
+      // 2️⃣ Traer productos que ya tengan embedding guardado
+      const productos = await Producto.findAll({
+        where: {
+          embedding: { [Op.ne]: null }
+        }
+      });
+  
+      const resultados = [];
+  
+      for (const producto of productos) {
+        const productEmbedding = producto.embedding;
+        const score = cosineSimilarity(queryEmbedding, productEmbedding);
+  
+        resultados.push({
+          producto,
+          score
+        });
+      }
+  
+      resultados.sort((a, b) => b.score - a.score);
+  
+      res.json({
+        matches: resultados.slice(0, 3)
+      });
+  
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: error.message });
+    }
   }
   
+  
 };
+
+function cosineSimilarity(a, b) {
+  const dot = a.reduce((acc, val, i) => acc + val * b[i], 0);
+  const normA = Math.sqrt(a.reduce((acc, val) => acc + val * val, 0));
+  const normB = Math.sqrt(b.reduce((acc, val) => acc + val * val, 0));
+  return dot / (normA * normB);
+}

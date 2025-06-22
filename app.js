@@ -15,7 +15,10 @@ const preciosugeridoRoutes = require("./routes/preciosugerido");
 
 const cors = require("cors");
 
-app.use(cors());
+
+app.use(cors({
+  origin: '*',  // O el dominio real de tu front, para mayor seguridad
+}));
 app.use(express.json());
 
 // Rutas base (por ahora vacío)

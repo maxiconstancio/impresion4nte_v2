@@ -1,0 +1,172 @@
+👉 Generando embeddings con CLIP local...
+🔎 144 productos encontrados.
+⚠️  Producto ID=40 sin image_url — se salta.
+⚠️  Producto ID=178 sin image_url — se salta.
+⚠️  Producto ID=181 sin image_url — se salta.
+⚠️  Producto ID=184 sin image_url — se salta.
+⚠️  Producto ID=187 sin image_url — se salta.
+⚠️  Producto ID=55 sin image_url — se salta.
+⚠️  Producto ID=10 sin image_url — se salta.
+⚠️  Producto ID=52 sin image_url — se salta.
+
+📸 Procesando ID=89 | Labubu
+🌐 URL: https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/640px-PNG_transparency_demonstration_1.png
+⏳ Cargando modelo CLIP local...
+
+(process:16536): GLib-GObject-CRITICAL **: 22:30:20.552: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:16536): GLib-GObject-CRITICAL **: 22:30:20.553: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:16536): GLib-GObject-CRITICAL **: 22:30:20.553: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:16536): GLib-GObject-CRITICAL **: 22:30:20.553: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:16536): GLib-GObject-CRITICAL **: 22:30:20.554: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:16536): GLib-GObject-CRITICAL **: 22:30:20.554: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:16536): GLib-GObject-CRITICAL **: 22:30:20.554: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:16536): GLib-GObject-CRITICAL **: 22:30:20.554: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+✅ Modelo CLIP listo.
+❌ Error en ID=89: text.split is not a function
+⚠️  Producto ID=78 sin image_url — se salta.
+⚠️  Producto ID=85 sin image_url — se salta.
+⚠️  Producto ID=131 sin image_url — se salta.
+⚠️  Producto ID=179 sin image_url — se salta.
+⚠️  Producto ID=70 sin image_url — se salta.
+⚠️  Producto ID=64 sin image_url — se salta.
+⚠️  Producto ID=182 sin image_url — se salta.
+⚠️  Producto ID=185 sin image_url — se salta.
+⚠️  Producto ID=107 sin image_url — se salta.
+⚠️  Producto ID=2 sin image_url — se salta.
+⚠️  Producto ID=146 sin image_url — se salta.
+⚠️  Producto ID=188 sin image_url — se salta.
+⚠️  Producto ID=39 sin image_url — se salta.
+⚠️  Producto ID=190 sin image_url — se salta.
+⚠️  Producto ID=81 sin image_url — se salta.
+⚠️  Producto ID=67 sin image_url — se salta.
+⚠️  Producto ID=144 sin image_url — se salta.
+⚠️  Producto ID=149 sin image_url — se salta.
+⚠️  Producto ID=145 sin image_url — se salta.
+⚠️  Producto ID=1 sin image_url — se salta.
+⚠️  Producto ID=92 sin image_url — se salta.
+⚠️  Producto ID=69 sin image_url — se salta.
+⚠️  Producto ID=72 sin image_url — se salta.
+⚠️  Producto ID=101 sin image_url — se salta.
+⚠️  Producto ID=100 sin image_url — se salta.
+⚠️  Producto ID=104 sin image_url — se salta.
+⚠️  Producto ID=109 sin image_url — se salta.
+⚠️  Producto ID=110 sin image_url — se salta.
+⚠️  Producto ID=150 sin image_url — se salta.
+⚠️  Producto ID=41 sin image_url — se salta.
+⚠️  Producto ID=42 sin image_url — se salta.
+⚠️  Producto ID=61 sin image_url — se salta.
+⚠️  Producto ID=103 sin image_url — se salta.
+⚠️  Producto ID=105 sin image_url — se salta.
+⚠️  Producto ID=60 sin image_url — se salta.
+⚠️  Producto ID=126 sin image_url — se salta.
+⚠️  Producto ID=128 sin image_url — se salta.
+⚠️  Producto ID=129 sin image_url — se salta.
+⚠️  Producto ID=130 sin image_url — se salta.
+⚠️  Producto ID=133 sin image_url — se salta.
+⚠️  Producto ID=45 sin image_url — se salta.
+⚠️  Producto ID=123 sin image_url — se salta.
+⚠️  Producto ID=87 sin image_url — se salta.
+⚠️  Producto ID=106 sin image_url — se salta.
+⚠️  Producto ID=13 sin image_url — se salta.
+⚠️  Producto ID=9 sin image_url — se salta.
+⚠️  Producto ID=11 sin image_url — se salta.
+⚠️  Producto ID=12 sin image_url — se salta.
+⚠️  Producto ID=15 sin image_url — se salta.
+⚠️  Producto ID=17 sin image_url — se salta.
+⚠️  Producto ID=37 sin image_url — se salta.
+⚠️  Producto ID=3 sin image_url — se salta.
+⚠️  Producto ID=91 sin image_url — se salta.
+⚠️  Producto ID=88 sin image_url — se salta.
+⚠️  Producto ID=16 sin image_url — se salta.
+⚠️  Producto ID=94 sin image_url — se salta.
+⚠️  Producto ID=63 sin image_url — se salta.
+⚠️  Producto ID=38 sin image_url — se salta.
+⚠️  Producto ID=122 sin image_url — se salta.
+⚠️  Producto ID=80 sin image_url — se salta.
+⚠️  Producto ID=93 sin image_url — se salta.
+⚠️  Producto ID=49 sin image_url — se salta.
+⚠️  Producto ID=71 sin image_url — se salta.
+⚠️  Producto ID=50 sin image_url — se salta.
+⚠️  Producto ID=47 sin image_url — se salta.
+⚠️  Producto ID=99 sin image_url — se salta.
+⚠️  Producto ID=73 sin image_url — se salta.
+⚠️  Producto ID=90 sin image_url — se salta.
+⚠️  Producto ID=66 sin image_url — se salta.
+⚠️  Producto ID=75 sin image_url — se salta.
+⚠️  Producto ID=98 sin image_url — se salta.
+⚠️  Producto ID=6 sin image_url — se salta.
+⚠️  Producto ID=83 sin image_url — se salta.
+⚠️  Producto ID=58 sin image_url — se salta.
+⚠️  Producto ID=4 sin image_url — se salta.
+⚠️  Producto ID=59 sin image_url — se salta.
+⚠️  Producto ID=65 sin image_url — se salta.
+⚠️  Producto ID=139 sin image_url — se salta.
+⚠️  Producto ID=140 sin image_url — se salta.
+⚠️  Producto ID=138 sin image_url — se salta.
+⚠️  Producto ID=137 sin image_url — se salta.
+⚠️  Producto ID=43 sin image_url — se salta.
+⚠️  Producto ID=44 sin image_url — se salta.
+⚠️  Producto ID=121 sin image_url — se salta.
+⚠️  Producto ID=96 sin image_url — se salta.
+⚠️  Producto ID=82 sin image_url — se salta.
+⚠️  Producto ID=48 sin image_url — se salta.
+⚠️  Producto ID=54 sin image_url — se salta.
+⚠️  Producto ID=86 sin image_url — se salta.
+⚠️  Producto ID=46 sin image_url — se salta.
+⚠️  Producto ID=116 sin image_url — se salta.
+⚠️  Producto ID=74 sin image_url — se salta.
+⚠️  Producto ID=95 sin image_url — se salta.
+⚠️  Producto ID=84 sin image_url — se salta.
+⚠️  Producto ID=136 sin image_url — se salta.
+⚠️  Producto ID=5 sin image_url — se salta.
+⚠️  Producto ID=51 sin image_url — se salta.
+⚠️  Producto ID=120 sin image_url — se salta.
+⚠️  Producto ID=134 sin image_url — se salta.
+⚠️  Producto ID=141 sin image_url — se salta.
+⚠️  Producto ID=147 sin image_url — se salta.
+⚠️  Producto ID=155 sin image_url — se salta.
+⚠️  Producto ID=53 sin image_url — se salta.
+⚠️  Producto ID=108 sin image_url — se salta.
+⚠️  Producto ID=127 sin image_url — se salta.
+⚠️  Producto ID=19 sin image_url — se salta.
+⚠️  Producto ID=156 sin image_url — se salta.
+⚠️  Producto ID=157 sin image_url — se salta.
+⚠️  Producto ID=154 sin image_url — se salta.
+⚠️  Producto ID=124 sin image_url — se salta.
+⚠️  Producto ID=62 sin image_url — se salta.
+⚠️  Producto ID=114 sin image_url — se salta.
+⚠️  Producto ID=189 sin image_url — se salta.
+⚠️  Producto ID=148 sin image_url — se salta.
+⚠️  Producto ID=135 sin image_url — se salta.
+⚠️  Producto ID=111 sin image_url — se salta.
+⚠️  Producto ID=76 sin image_url — se salta.
+⚠️  Producto ID=142 sin image_url — se salta.
+⚠️  Producto ID=177 sin image_url — se salta.
+⚠️  Producto ID=132 sin image_url — se salta.
+⚠️  Producto ID=180 sin image_url — se salta.
+⚠️  Producto ID=14 sin image_url — se salta.
+⚠️  Producto ID=158 sin image_url — se salta.
+⚠️  Producto ID=183 sin image_url — se salta.
+⚠️  Producto ID=56 sin image_url — se salta.
+
+📸 Procesando ID=113 | Patapim
+🌐 URL: file://D:/dev/impresion4nte/impresion4nte-v2/uploads/patapim.jpg
+❌ Error en ID=113: text.split is not a function
+⚠️  Producto ID=153 sin image_url — se salta.
+⚠️  Producto ID=7 sin image_url — se salta.
+⚠️  Producto ID=118 sin image_url — se salta.
+⚠️  Producto ID=186 sin image_url — se salta.
+⚠️  Producto ID=18 sin image_url — se salta.
+⚠️  Producto ID=115 sin image_url — se salta.
+⚠️  Producto ID=176 sin image_url — se salta.
+⚠️  Producto ID=57 sin image_url — se salta.
+⚠️  Producto ID=151 sin image_url — se salta.
+
+🎉 ¡Proceso completado sin problemas!

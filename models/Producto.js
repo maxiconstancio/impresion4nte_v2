@@ -23,7 +23,16 @@ module.exports = (sequelize, DataTypes) => {
       activo: {
         type: DataTypes.BOOLEAN,
         defaultValue: true,
+      },
+      image_url: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      embedding: {
+        type: DataTypes.JSONB,
+        allowNull: true,
       }
+      
     });
   
     Producto.associate = function(models) {
