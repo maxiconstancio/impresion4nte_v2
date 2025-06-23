@@ -1,15 +1,19 @@
+// services/localClipService.js
+
 const fs = require('fs');
-const sharp = require('sharp');
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 let extractor;
 
 async function loadModel() {
   if (!extractor) {
-    console.log('⏳ Cargando modelo CLIP local...');
-    const { CLIPFeatureExtractor } = await import('@xenova/transformers');
-    extractor = await CLIPFeatureExtractor.from_pretrained('Xenova/clip-vit-base-patch32');
-    console.log('✅ Modelo CLIP listo.');
+    console.log('⏳ Cargando pipeline image-classification...');
+    const { pipeline } = await import('@xenova/transformers');
+
+    // ✔ Usamos modelo de visión puro
+    extractor = await pipeline('image-classification', 'Xenova/vit-base-patch16-224');
+
+    console.log('✅ Pipeline image-classification cargado.');
   }
   return extractor;
 }
@@ -17,40 +21,22 @@ async function loadModel() {
 async function generateImageEmbedding(imageUrl) {
   const model = await loadModel();
 
-  let buffer;
+  let input;
 
   if (imageUrl.startsWith('file://')) {
     const localPath = imageUrl.replace('file://', '');
     if (!fs.existsSync(localPath)) throw new Error(`Archivo no existe: ${localPath}`);
-    buffer = fs.readFileSync(localPath);
+    input = fs.readFileSync(localPath); // ✅ Buffer local
   } else {
-    const response = await fetch(imageUrl);
-    if (!response.ok) throw new Error(`No se pudo descargar imagen: ${response.statusText}`);
-    const arrayBuffer = await response.arrayBuffer();
-    buffer = Buffer.from(arrayBuffer);
+    // ✅ Pasa la URL como string para que el pipeline la descargue solo
+    input = imageUrl;
   }
 
-  // 👉 Preprocesa con sharp a RGB y normaliza
-  const { data, info } = await sharp(buffer)
-    .resize(224, 224)
-    .removeAlpha()
-    .raw()
-    .toBuffer({ resolveWithObject: true });
+  // 🚀 Ejecuta pipeline → devuelve labels y scores
+  const output = await model(input);
 
-  const [width, height, channels] = [info.width, info.height, info.channels];
-
-  // Normaliza pixeles a rango 0-1 (dividir por 255)
-  const normalized = Array.from(data).map(v => v / 255);
-
-  // Reorganiza: [batch, channels, height, width]
-  const tensor = [
-    normalized
-  ];
-
-  // 👉 Usa CLIPFeatureExtractor para extraer embeddings
-  const output = await model.forward({ pixel_values: tensor });
-
-  return output.last_hidden_state[0];
+  // Opcional: convierte a JSON string para guardar en DB
+  return JSON.stringify(output);
 }
 
 module.exports = {

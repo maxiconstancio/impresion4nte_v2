@@ -2,7 +2,13 @@ const { Producto, VentaProducto, Venta } = require("../models");
 const { Op, Sequelize } = require("sequelize");
 const visionService = require("../services/visionService");
 const vectorService = require("../services/vectorService");
-const localClipService = require("../services/localClipService");
+const localClipService = require("../services/localClipService.js");
+
+const axios = require('axios');
+const FormData = require('form-data');
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
+
+require('dotenv').config();
 
 module.exports = {
   async getAll(req, res) {
@@ -92,9 +98,27 @@ module.exports = {
 
   async create(req, res) {
     try {
+      // 1️⃣ Crear el producto normalmente con los datos del body
       const producto = await Producto.create(req.body);
+  
+      // 2️⃣ Si tiene image_url, genera etiquetas con image-classification
+      if (producto.image_url) {
+        try {
+          const embedding = await localClipService.generateImageEmbedding(producto.image_url);
+          producto.embedding = embedding;
+          await producto.save();
+          console.log(`✅ Etiquetas generadas para producto ID=${producto.id}`);
+        } catch (error) {
+          console.error(`❌ Error generando etiquetas: ${error.message}`);
+          // No lanzamos error para no romper la creación del producto
+        }
+      }
+  
+      // 3️⃣ Devolver respuesta
       res.status(201).json(producto);
+  
     } catch (error) {
+      console.error(error);
       res.status(500).json({ error: error.message });
     }
   },
@@ -244,48 +268,32 @@ module.exports = {
       console.error(error);
       res.status(500).json({ error: error.message });
     }
-  }, searchByPhotoLocal: async (req, res) => {
+  },
+  searchByPhotoLocal: async (req, res) => {
     try {
-      const { imageUrl } = req.body;
-
-      const queryEmbedding = await localClipService.generateImageEmbedding(imageUrl);
-
-      const productos = await Producto.findAll({
-        where: {
-          embedding: { [Op.ne]: null }
-        }
-      });
-
-      const resultados = [];
-
-      for (const producto of productos) {
-        const productEmbedding = producto.embedding;
-        const score = cosineSimilarity(queryEmbedding, productEmbedding);
-
-        resultados.push({
-          producto,
-          score
-        });
+      // ✅ Si envías imagen como archivo, estará en req.file
+      const file = req.file;
+  
+      if (!file) {
+        return res.status(400).json({ error: "Falta el archivo de imagen" });
       }
-
-      resultados.sort((a, b) => b.score - a.score);
-
-      res.json({
-        matches: resultados.slice(0, 3)
-      });
-
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: error.message });
-    }
   
-    try {
-      const { imageUrl } = req.body;
+      // 1️⃣ Preparar FormData para enviar a visionService.py
+      const form = new FormData();
+      form.append('file', file.buffer, { filename: file.originalname });
+      
+      const visioUrl  = (process.env.VISION_SERVICE_URL + '/describe_and_embed') || 'http://vision:8000/describe_and_embed'
+      
+      // 2️⃣ POST a visionService local
+      const visionResp = await axios.post(
+        visioUrl ,
+        form,
+        { headers: form.getHeaders() }
+      );
   
-      // 1️⃣ Generar embedding de la imagen usando CLIP local
-      const queryEmbedding = await localClipService.generateImageEmbedding(imageUrl);
+      const { description, embedding } = visionResp.data;
   
-      // 2️⃣ Traer productos que ya tengan embedding guardado
+      // 3️⃣ Traer productos de DB y calcular similitud
       const productos = await Producto.findAll({
         where: {
           embedding: { [Op.ne]: null }
@@ -295,8 +303,12 @@ module.exports = {
       const resultados = [];
   
       for (const producto of productos) {
-        const productEmbedding = producto.embedding;
-        const score = cosineSimilarity(queryEmbedding, productEmbedding);
+        let productEmbedding = producto.embedding;
+        if (typeof productEmbedding === 'string') {
+          productEmbedding = JSON.parse(productEmbedding);
+        }
+  
+        const score = cosineSimilarity(embedding, productEmbedding);
   
         resultados.push({
           producto,
@@ -307,6 +319,8 @@ module.exports = {
       resultados.sort((a, b) => b.score - a.score);
   
       res.json({
+        description,
+        // match: resultados[0] || null
         matches: resultados.slice(0, 3)
       });
   
@@ -315,6 +329,9 @@ module.exports = {
       res.status(500).json({ error: error.message });
     }
   }
+  
+  
+  
   
   
 };

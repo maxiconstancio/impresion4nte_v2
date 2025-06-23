@@ -3,7 +3,7 @@
 require('dotenv').config();
 const path = require('path');
 const { Producto } = require('../models');
-const localClipService = require('../services/localClipService');
+const localClipService = require('../services/localClipService.js');
 
 // ✅ Validador robusto: soporta file:// y http(s)://
 function esURLImagen(url) {
@@ -19,7 +19,7 @@ function esURLImagen(url) {
 }
 
 (async () => {
-  console.log('👉 Generando embeddings con CLIP local...');
+  console.log('👉 Generando embeddings con image-classification...');
 
   // ✅ Trae todos los productos activos
   const productos = await Producto.findAll({ where: { activo: true } });
@@ -44,14 +44,14 @@ function esURLImagen(url) {
       console.log(`\n📸 Procesando ID=${producto.id} | ${producto.nombre}`);
       console.log(`🌐 URL: ${imageUrl}`);
 
-      // 🚀 Genera embedding con CLIP local
+      // 🚀 Genera etiquetas con pipeline image-classification
       const embedding = await localClipService.generateImageEmbedding(imageUrl);
 
-      // ✅ Guarda el embedding en la columna
+      // ✅ Guarda el JSON de etiquetas en la columna embedding
       producto.embedding = embedding;
       await producto.save();
 
-      console.log(`✅ Embedding guardado para ID=${producto.id}`);
+      console.log(`✅ Etiquetas guardadas para ID=${producto.id}`);
     } catch (error) {
       console.error(`❌ Error en ID=${producto.id}: ${error.message}`);
     }
