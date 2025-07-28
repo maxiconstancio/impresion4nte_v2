@@ -20,6 +20,11 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         defaultValue: 0,
       },
+      categoria: {
+             type: DataTypes.STRING,
+             allowNull: false,
+             defaultValue: 'General',
+      },
       activo: {
         type: DataTypes.BOOLEAN,
         defaultValue: true,

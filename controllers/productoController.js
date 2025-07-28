@@ -199,7 +199,7 @@ module.exports = {
             model: Venta,
             as: "venta",
             where: {
-              tipo: "feria",
+              
               fecha: { [Op.gte]: desde },
             },
           },
@@ -218,22 +218,28 @@ module.exports = {
   
         const id = vp.producto_id;
         if (!mapa[id]) {
-          mapa[id] = {
-            producto_id: id,
-            nombre: vp.producto.nombre,
-            stock_actual: vp.producto.stock,
-            stock_minimo_actual: vp.producto.stock_minimo,
-            vendidos_feria_90d: 0,
-          };
-        }
+                    mapa[id] = {
+                      producto_id: id,
+                      nombre: vp.producto.nombre,
+                     categoria: vp.producto.categoria || "General",  // <— guardo categoría
+                      stock_actual: vp.producto.stock,
+                      stock_minimo_actual: vp.producto.stock_minimo,
+                      vendidos_feria_90d: 0,
+                   };
+                  }
   
         mapa[id].vendidos_feria_90d += vp.cantidad;
       }
   
-      const resultados = Object.values(mapa).map((p) => ({
-        ...p,
-        stock_minimo_sugerido: Math.ceil(p.vendidos_feria_90d / 3),
-      }));
+            const resultados = Object.values(mapa).map((p) => ({
+                producto_id: p.producto_id,
+                nombre: p.nombre,
+                categoria: p.categoria,                         // <— incluyo categoría en la respuesta
+                stock_actual: p.stock_actual,
+                stock_minimo_actual: p.stock_minimo_actual,
+                vendidos_feria_90d: p.vendidos_feria_90d,
+                stock_minimo_sugerido: Math.ceil(p.vendidos_feria_90d / 3),
+              }));
   
       res.json(resultados);
     } catch (error) {

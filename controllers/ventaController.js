@@ -175,31 +175,34 @@ module.exports = {
         if (hasta) whereVenta.fecha[Op.lte] = hasta;
       }
 
-      const resultados = await VentaProducto.findAll({
-        include: [
-          {
-            model: Venta,
-            as: "venta",
-            where: whereVenta,
-            attributes: []
-          },
-          {
-            model: Producto,
-            as: "producto",
-            attributes: ["id", "nombre"]
-          }
-        ],
-        attributes: [
-          "producto_id",
-          [require("sequelize").fn("SUM", require("sequelize").col("cantidad")), "cantidad_total"]
-        ],
-        group: ["producto_id", "producto.id", "producto.nombre"],
-        order: [[require("sequelize").literal("cantidad_total"), "DESC"]]
-      });
+             const resultados = await VentaProducto.findAll({
+                 include: [
+                   {
+                     model: Venta,
+                     as: "venta",
+                     where: whereVenta,
+                     attributes: []
+                   },
+                   {
+                     model: Producto,
+                     as: "producto",
+                     // pedimos también la categoría
+                     attributes: ["id", "nombre", "categoria"]
+                   }
+                 ],
+                 attributes: [
+                   "producto_id",
+                   [require("sequelize").fn("SUM", require("sequelize").col("cantidad")), "cantidad_total"]
+                 ],
+                 group: ["producto_id", "producto.id", "producto.nombre", "producto.categoria"],
+                 order: [[require("sequelize").literal("cantidad_total"), "DESC"]]
+               });
 
       const ranking = resultados.map(r => ({
         producto_id: r.producto_id,
         nombre: r.producto.nombre,
+                nombre: r.producto.nombre,
+        categoria: r.producto.categoria || 'General',
         cantidad_total: parseInt(r.get("cantidad_total"))
       }));
 
